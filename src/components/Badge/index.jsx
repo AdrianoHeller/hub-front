@@ -1,5 +1,4 @@
-import React,{ useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
 
 import CoupleIconWhite from '../../assets/coupleIconWhite.png'
 import HomeIconGrey from '../../assets/homeIconGrey.png'
@@ -11,8 +10,6 @@ import HeartIconPurple from '../../assets/heartIconPurple.png'
 import './styles.css'
 
 export default (props) => {
-
-const hmsUrl = 'https://sistemas-via-saude.uc.r.appspot.com/indicadores/txrl8b7oglGzMA82D1qD/populacao';
 
 const userData = [{
     dashBackgroundColor: '#1AA8E9',
@@ -75,13 +72,6 @@ const userData = [{
     dashMainTextColor: '#FFFFFF',
     linkTo: '',
 }]
-
-useEffect(() => {
-        axios.get(hmsUrl)
-            .then(res => {
-                console.log(res.data)
-            })
-},[]);
     
     return (            
             <div id="main-dash-item"

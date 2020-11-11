@@ -9,9 +9,6 @@ import './styles.css'
 
 export default props => {
 
-// if(!logged){
-//     return <Redirect to={'/'}/>
-// };
     return(
         <div id="main-page">           
             <SideMenu

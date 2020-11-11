@@ -1,6 +1,7 @@
 import React,{ useContext } from 'react'
 import { BrowserRouter,Route,Redirect } from 'react-router-dom'
 import { GlobalProvider,GlobalContext } from '../GlobalContext'
+
 import Landing from '../Landing'
 import Logged from '../Logged'
 import Kpis from '../Kpis'
