@@ -1,0 +1,35 @@
+body{
+    background-color: #FFFFFF;
+}
+
+#main-page{
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+#main-dashboard{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e2e2e2;
+    box-shadow: inset 0 0 1px 0.2px rgb(95, 95, 95);
+    height: 94vh;
+}
+
+.home-icon{
+    margin-right: 20px;
+}
+
+
+
+

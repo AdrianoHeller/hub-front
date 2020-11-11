@@ -1,0 +1,74 @@
+@font-face{
+    font-family: 'RobotoCondensed';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-family: 'Helvetica';
+    src: url(../fonts/Helvetica35Thin_22435.ttf);
+}
+
+:root{
+    font-size: 60%;
+
+    /*white theme*/
+    --background-color:#E6FCFF;
+    --main-text-color:#42A7E2;
+    --button-text-color:#FFFFFF;
+    --main-login-lines:#8FCAEE;
+    --main-green-color:#5e96ffc2;
+    --main-grey-color:#91B1B5;
+    --main-brown-color:#69513F;
+    --clear-brown-color:#B89C87;
+    --main-yellow-hover:#fbe200;
+
+    /*dark theme*/
+    --background-black-color:#001F2C;
+    --main-text-blue-color:#9092927a;
+    --button-text-blue-color:#8FCAEE;
+    --main-login-black-lines:#4d4d4d;
+    --main-brown-dark-color:#232323;    
+}
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    font-family: 'Helvetica';
+    background-color: var(--main-text-color);
+}
+
+.dark-mode{
+    background-color: var(--background-black-color);
+    color: var(--main-text-blue-color);
+}
+
+input,
+textarea,
+label,
+select,
+option,
+p,
+a{
+    font:500 1.5rem 'Helvetica';
+    color: var(--background-color);
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    height: 100vh;    
+    margin: 0 auto;    
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 63%;
+    }    
+}

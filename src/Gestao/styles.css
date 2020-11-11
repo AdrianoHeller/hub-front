@@ -1,0 +1,16 @@
+.dash-Grid{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas: 
+          "gOne gTwo gThree"
+          "gFour gFive gSix"
+          "gVar gVar gVar2";      
+}
+
+.component{
+    grid-area: gOne;
+}
+

@@ -1,0 +1,90 @@
+
+
+#dashboard-header{
+    height: 6vh;
+    width: 80vw;    
+    display: flex;
+    align-items: stretch;    
+    border-bottom: solid 1px var(--main-text-blue-color);
+}
+
+#dashboard-header>p{
+    color: var(--main-brown-dark-color);
+    font: 500 1.8rem 'Helvetica';   
+    flex: 8;
+     margin-left: 50px;
+}
+
+.config-icon{
+    height: 50%;    
+    align-self: center;
+    flex: 0.2;
+    padding: 14px;
+    border-left: solid 1px var(--main-text-blue-color);
+    transition: 0.3s;
+}
+
+.config-icon:hover{
+    background-color: var(--main-green-color);
+    cursor: pointer;
+}
+
+.notify-icon{
+    height: 50%;    
+    align-self: center;
+    flex: 0.2;
+    padding: 14px;
+    border-left: solid 1px var(--main-text-blue-color);
+    border-right: solid 1px var(--main-text-blue-color);
+    transition: 0.3s;
+}
+
+.notify-icon:hover{
+    background-color: var(--main-green-color);
+    cursor: pointer;
+}
+
+.button-box{    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex: 2;
+}
+
+.button-box>p{
+    font: 300 1.4rem 'Helvetica';
+    color: black;
+}
+
+.buttonDark{
+    width: 3vw;
+    height: 50%;
+    background-color: var(--main-login-black-lines);
+    border-radius: 20px;
+    border: solid 1px var(--main-text-blue-color);
+    margin-left: 1rem;
+    position: relative;
+    box-shadow: inset 0 0 5px 2px rgb(73, 73, 73);
+}
+
+.buttonGrey{
+    position: absolute;
+    background-color: grey;
+    height: 3vh;
+    width: 1.5vw;
+    top: 14px;
+    right: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+.buttonDark{    
+    background-color: rgb(112, 112, 112); 
+}
+
+.buttonGreyOn{
+    background-color: rgb(223, 223, 223);
+    box-shadow: 2px 2px 2px black;
+    right: 90px;
+}

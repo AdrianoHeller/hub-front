@@ -1,0 +1,84 @@
+#main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.logo-HMS{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+#form-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#form-items input{
+    background: rgba(139, 201, 226, 0.568);
+    border-radius: 35px;
+    border:1px solid var(--main-login-lines);
+    outline: none;
+    padding: 2.2rem;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+#form-items input + input{
+    margin-bottom: 20px;
+}
+
+#text-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 500 1.5rem 'Helvetica';
+    color: var(--background-color)
+}
+
+#text-data a:first-child {
+    text-decoration: none;
+    color: var(--main-text-color)
+}
+
+#text-data a:last-child {
+    text-decoration: none;
+    color: var(--background-color)
+}
+
+#text-data p:first-child{
+    font: 500 2.6rem 'Helvetica';
+    padding: 10px;
+    margin: 0;
+}
+
+#text-data p:first-child:hover{
+    color: var(--main-yellow-hover);
+}
+
+#text-data p:last-child{
+    font: 500 1.5rem 'Helvetica';
+    margin: 0;
+}
+
+.button-form{
+    background: var(--main-login-lines);
+    color: var(--button-text-color);    
+}
+
+.image-badge{
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+.image-badge:hover{
+    filter: none;
+}

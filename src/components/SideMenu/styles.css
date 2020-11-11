@@ -1,0 +1,98 @@
+#main-sidemenu{    
+    border-right: solid 1px var(--main-text-blue-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;    
+}
+
+#main-badge{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#pic-image{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.badge-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 300 1.8rem 'Helvetica';
+    color: var(--main-green-color);    
+}
+
+.badge-text span:first-child{
+    font: 500 2.5rem 'Helvetica';
+    color: var(--main-brown-dark-color);
+}
+
+.badge-text span:last-child{
+    font: 500 1.5rem 'Helvetica';
+    color: var(--main-text-blue-color);
+}
+
+#menu-list{
+    height: 55vh;    
+    width: 80%;
+    margin: 0 auto;       
+}
+
+#menu-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    display: flex;
+    text-decoration: none;
+    font: 400 1.7rem 'Helvetica';
+    padding: 20px 40px;
+    transition: 0.2s;
+    color: var(--main-brown-dark-color);
+    align-items: center;
+}
+
+.link:hover{
+    border-bottom: solid 2px var(--main-green-color);
+    background-color: var(--main-green-color);
+    color: var(--button-text-color);
+    border-radius: 20px;
+    margin-left: 0;
+}
+
+#logo-image{
+    width: 100%;
+    border-bottom: solid 1px var(--main-text-blue-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    height: 6vh;
+}
+
+#logo-image:hover{
+    background-color: var(--main-green-color);
+    cursor: pointer;
+}
+
+.logo{
+    width: 49%;
+    margin-left: 10px;
+}
+
+.back-icon{        
+    width: 2.5%;
+    height: 30%;
+    margin-right: 10px;
+}
