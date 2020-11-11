@@ -1,6 +1,5 @@
-import React,{ useEffect,useState,useRef } from 'react'
+import React,{ useState } from 'react'
 import { Redirect } from 'react-router-dom'
-import app from '../Firebase'
 
 import Badge from '../components/Badge'
 import TopBar from '../components/TopBar'
@@ -9,30 +8,10 @@ import SideMenu from '../components/SideMenu'
 import './styles.css'
 
 export default props => {
-const barGraphRef = useRef(null);
 
-const [barData,setBarData] = useState({});    
-const [logged,setLogged] = useState(true);
-
-const updateBarData = () => {
-    setBarData(barGraphRef.current)
-};
-
-const logUserOut = () => {
-    app.auth().signOut()
-        .then(() => {
-            setLogged(false)            
-        })
-        .catch(err => {
-            const code = err.code;
-            const message = err.message;
-            alert(message)
-        })
-};
-
-if(!logged){
-    return <Redirect to={'/'}/>
-};
+// if(!logged){
+//     return <Redirect to={'/'}/>
+// };
     return(
         <div id="main-page">           
             <SideMenu

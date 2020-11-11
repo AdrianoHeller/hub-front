@@ -14,7 +14,7 @@ export default props => {
                 <img className="logo-HMS" src={LogoImageWhite} alt="logo hms"/>
             </div>            
             <div id="logged-user-item">                
-               <Link to="/home"><img src={PhotoImage} alt="ceo image" className="image-badge"/></Link>                
+               <Link to="/home"><img src={PhotoImage} alt="ceo" className="image-badge"/></Link>
             </div>
             <div id="text-data">
                 <p>Júnior Durski</p>

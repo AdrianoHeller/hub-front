@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react'
+import React,{ useEffect } from 'react'
 import axios from 'axios'
 
 import CoupleIconWhite from '../../assets/coupleIconWhite.png'
@@ -11,8 +11,6 @@ import HeartIconPurple from '../../assets/heartIconPurple.png'
 import './styles.css'
 
 export default (props) => {
-
-const [dbData, setdbData] = useState({});
 
 const hmsUrl = 'https://sistemas-via-saude.uc.r.appspot.com/indicadores/txrl8b7oglGzMA82D1qD/populacao';
 
@@ -92,7 +90,7 @@ useEffect(() => {
                  backgroundColor: userData[props.index].dashBackgroundColor
                  }}>
                 <div className="header-data">
-                    <img src={userData[props.index].dashIcon} alt="icon image" className="icon-button"/>
+                    <img src={userData[props.index].dashIcon} alt="icon" className="icon-button"/>
                     <p style={{
                         color: userData[props.index].dashMainTextColor
                     }}>{userData[props.index].dashTitle}</p>

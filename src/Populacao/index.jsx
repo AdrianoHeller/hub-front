@@ -3,6 +3,7 @@ import React from 'react'
 import SideMenu from '../components/SideMenu'
 import TopBar from '../components/TopBar'
 import Badge from '../components/Badge'
+import HorizontalChartBuilder from '../Graphics/Builder'
 
 import './styles.css'
 
@@ -17,7 +18,7 @@ export default props => {
             <TopBar viewDescription="População" />
             <div id="dashboard-body">                       
                     <Badge index={0}/>
-
+                    <HorizontalChartBuilder />
             </div>
         </div>
     </div>
